@@ -14,3 +14,4 @@ gulp.task('watch',function(){
 
 //Default task: Run the 'copy' and 'watch' tasks
 gulp.task('default',gulp.series('copy','watch'));
+
