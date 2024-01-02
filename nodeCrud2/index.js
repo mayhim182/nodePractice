@@ -28,11 +28,13 @@ app.post('/', function(req,res){
     let items = data.map(item => item.id);
     let newId = items.length > 0 ? Math.max.apply(Math,items)+1 : 1;
 
+    console.log("here",req.body);
+
     let newItem = {
         id:newId,
-        name:req.body.name,
-        course:req.body.course,
-        roll_no:req.body.roll_no
+        name:req.body?.name,
+        course:req.body?.course,
+        roll_no:req.body?.roll_no
     }
 
     data.push(newItem);
@@ -79,7 +81,7 @@ app.patch("/:id",function(req,res){
         res.status(201).json({"message":"data updated"});
     }else{
         res.status(404).json({
-            'message':'unable to insert data because data inserted not matched'
+            'message':'Not found'
         })
     }
 });
