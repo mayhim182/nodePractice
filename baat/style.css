@@ -1,0 +1,33 @@
+.logo{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(238, 244, 244);
+    height: 60vh;
+    width: 50vw;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.message{
+    width: max-content;
+    border: 2px solid rgb(225, 151, 151);
+    border-radius: 1%;
+    color: aliceblue;
+    background-color: rgb(33, 32, 32);
+    padding: 1%;
+    margin: 1%;
+}
+
+.left{
+
+}
+
+.right{
+
+}
