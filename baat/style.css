@@ -10,24 +10,50 @@
     background-color: rgb(238, 244, 244);
     height: 60vh;
     width: 50vw;
+    padding: 2%;
     margin: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
+    margin-bottom: 2%;
 }
 
 .message{
     width: max-content;
-    border: 2px solid rgb(225, 151, 151);
+    /* border: 2px solid rgb(225, 151, 151); */
     border-radius: 1%;
-    color: aliceblue;
-    background-color: rgb(33, 32, 32);
+    color: rgb(24, 25, 26);
+    background-color: rgb(137, 128, 128);
     padding: 1%;
     margin: 1%;
 }
 
 .left{
-
+    float: left;
+    clear: both;
 }
 
 .right{
+    float: right;
+    clear: both;
+}
 
+.send{
+    width: 100vw;
+    margin: auto;
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+}
+
+#messageInput{
+    width: 42%;
+}
+
+.btn{
+    cursor: pointer;
+    background: rgb(97, 139, 174);
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+    font-family: cursive;
+    border-radius: 10%;
 }
